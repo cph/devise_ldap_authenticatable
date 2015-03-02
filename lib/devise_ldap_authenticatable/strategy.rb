@@ -8,6 +8,7 @@ module Devise
         return fail(:invalid) unless resource
 
         if validate(resource)
+          resource.after_ldap_authentication if resource.respond_to?(:after_ldap_authentication)
           success!(resource)
         end
       end
