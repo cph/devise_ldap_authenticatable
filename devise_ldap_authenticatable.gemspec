@@ -3,7 +3,7 @@ $:.push File.expand_path("../lib", __FILE__)
 require "devise_ldap_authenticatable/version"
 
 Gem::Specification.new do |s|
-  s.name     = 'houston-devise_ldap_authenticatable'
+  s.name     = 'devise_ldap_authenticatable'
   s.version  = DeviseLdapAuthenticatable::VERSION.dup
   s.platform = Gem::Platform::RUBY
   s.summary  = 'Devise extension to allow authentication via LDAP'
